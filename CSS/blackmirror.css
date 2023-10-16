@@ -1,0 +1,30 @@
+/***********************************************************/
+/*          Style sheet for Black Mirror web site          */
+/*          author: Jonathan Garcia                        */
+/*          version: 1.0                                   */
+/*          comments: class project 2023-24                */
+/***********************************************************/
+
+/* cuando quiero usar una tipografia y asegurarme de que se vera correctamente, suministro tambien con la pagina el archivo de la fuente que sera .ttf o .otf */
+/* 1- ahora enlazo el archivo descargado*/
+/* 2- utilizar rl nombre de la font-familiy donde quiera usarlo */
+
+
+@font-face {    /*esto no es un selector, es un enlaze */
+    font-family: blackmirror ;
+    src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
+}
+@font-face {
+    font-family: textonormal;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
+body {margin: 0;padding:0;  /*para desactivar el espacio de separacion por defecto*/
+    background-color: #202020;
+    font-family: textonormal;}
+
+#wrapper {background-color: #808080;
+        width:80%;       /*ancho fijado al 80%*/        
+        margin:auto}     /*centrado  automatico*/
+
