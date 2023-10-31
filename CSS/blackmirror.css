@@ -19,6 +19,7 @@
     src: url(../fonts/OpenSans-Regular.ttf);
 }
 
+* {box-sizing: border-box;} /* com maquetacion completa SIEMPRE */
 
 body {margin: 0;padding:0;  /*para desactivar el espacio de separacion por defecto*/
     background-color: #202020;
@@ -28,3 +29,27 @@ body {margin: 0;padding:0;  /*para desactivar el espacio de separacion por defec
         width:80%;       /*ancho fijado al 80%*/        
         margin:auto}     /*centrado  automatico*/
 
+
+/************************************** HERO SCTION *************/
+
+#hero {background-image: url(../img/hero.webp);
+            height: 95vh;        /* el 100 % del alto de la ventana del navegador */
+            background-size: cover;
+            background-position: center;
+            position:relative;     /**** contenedor relativo *****/
+}
+
+#hero button {background-color:#808080;
+                color: white;
+                font-weight: bold;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 10px;
+                position:absolute;   /******** contenedor absoluto ********/
+                top:70% ;
+                left:50% ;
+                transform: translate(-50%,-50%);  /*** lo traslado a la mitad de su tamaño **/
+
+}
+
+/******************** responsividad ***************************/
