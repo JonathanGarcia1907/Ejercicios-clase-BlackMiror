@@ -22,11 +22,11 @@
 * {box-sizing: border-box;} /* com maquetacion completa SIEMPRE */
 
 body {margin: 0;padding:0;  /*para desactivar el espacio de separacion por defecto*/
-    background-color: #202020;
+    background-color: #ccc;
     font-family: textonormal;}
 
 #wrapper {background-color: #808080;
-        width:80%;       /*ancho fijado al 80%*/        
+        width:100%;       /*ancho fijado al 100% MOBILE FIRST*/        
         margin:auto}     /*centrado  automatico*/
 
 
@@ -52,4 +52,42 @@ body {margin: 0;padding:0;  /*para desactivar el espacio de separacion por defec
 
 }
 
+
+/********************* INTRO SECTION (GRID-2) ********************/
+
+.grid-2 {display: grid;
+        grid-template-columns: 100%;}  /****** MOBILE FIRST ***/
+
+.col-2 {padding: 4%;
+        }
+
+#introimg {width: 80%;
+            display: block;
+            margin: auto;}
+
+
+
+
+/***************** footer *******************************/
+footer {background-color: black;
+        color: white;}
+.grid-3d {
+            display: grid;
+            grid-template-columns: 50% 50%; /****** MOBILE FIRST ***/
+}
+
+.col-4 {padding:4%;}
+
+
+
 /******************** responsividad ***************************/
+
+@media only screen and (width>650px){
+        #wrapper {width: 80%;} 
+
+}
+
+@media only screen and (width>900px){
+        .grid-2 {grid-template-columns: 50% 50%;}
+        .grid-3d {grid-template-columns: 25% 25% 50%;}
+}
