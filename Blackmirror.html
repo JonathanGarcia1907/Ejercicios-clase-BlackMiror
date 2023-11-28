@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport"  content="width=device-width,  initial-scale1.0">
     <title>Black Mirror - Tribute</title>
+    <!-- enlazo el .css al estilo-->
     <link rel="stylesheet" href="./css/blackmirror.css">
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/xicon">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- enlace al archivo de todos los js del website -->
+    <script src="./JS/functions.js"></script>
 </head>
 <body>
     <!-- la estructura del layout en scroll-->
     <div id="wrapper"> <!-- contenedor general-->
-        <nav>Aqui va a ir la barra de navegacion</nav><!-- obligatoria-->
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Home</a>
+                <a href="#intro">Introduction</a>
+                <a href="#Sessions">Session</a>
+                <a href="#funfacts">Fun facts</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <!-- javascript:void(0) desactiva el comportamiento default del vinculo -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav><!-- obligatoria-->
+
+        <!--  arrow up posicionada en la esquina inferior derecha -->
+        <a href="#">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </a>
+
+
+
         <section id="hero"><!-- cuasi obligatoria-->
             <a href="#Sessions"><button>Who dares?</button></a>
         </section>
